@@ -139,7 +139,7 @@ public class PhotosActivity extends FragmentActivity implements
     }
 
     private void getData() {
-        MyHttpAPIControl.newInstance().getPicture(item.getContentid(),
+        MyHttpAPIControl.newInstance().getPicture(item.getContentid()+"",
                 new AsyncHttpResponseHandler() {
 
                     @Override

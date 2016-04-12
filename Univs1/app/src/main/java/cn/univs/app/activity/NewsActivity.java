@@ -236,7 +236,7 @@ public class NewsActivity extends FragmentActivity implements OnChangedListener 
     }
 
     private void getdata() {
-        MyHttpAPIControl.newInstance().getArticle(item.getContentid(),
+        MyHttpAPIControl.newInstance().getArticle(item.getContentid()+"",
                 new AsyncHttpResponseHandler() {
 
                     @Override

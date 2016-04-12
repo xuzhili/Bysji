@@ -32,20 +32,20 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\activity_registebyphoneone.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/layout_tab_segment.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/1.5.0/res/layout/layout_tab_segment.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_full_alert_dialog_item.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_full_alert_dialog_item.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_huifureply.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\activity_huifureply.xml"
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/layout_tab_segment.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/1.5.0/res/layout/layout_tab_segment.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/fragment_layout_content_list.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/fragment_layout_content_list.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_huifureply.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\activity_huifureply.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_findpassword.xml",
@@ -56,12 +56,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_full_curtain.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_save_image.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\dialog_save_image.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_save_image.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\dialog_save_image.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
@@ -84,12 +84,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_save_image.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\dialog_save_image.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_post_share.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_post_share.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_save_image.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\dialog_save_image.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
@@ -100,12 +100,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/univs_layout_head_view.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/univs_layout_head_view.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_yindao.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\activity_yindao.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/univs_layout_head_view.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/univs_layout_head_view.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
@@ -140,12 +140,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_icon.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\univs_itme_naviga_view.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\univs_itme_naviga_view.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reply.xml",
@@ -156,12 +156,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\activity_photo_preview.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_layout_content_list.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\fragment_layout_content_list.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_left.xml",
@@ -172,24 +172,24 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\pull_to_refresh_header_horizontal.xml"
-    },
-    {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/univs_layout_list_head_view.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/univs_layout_list_head_view.xml"
-    },
-    {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/layout_tab_right.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/1.5.0/res/layout/layout_tab_right.xml"
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_platform_selector_dialog.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\umeng_bak_platform_selector_dialog.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/layout_tab_right.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/1.5.0/res/layout/layout_tab_right.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/univs_layout_list_head_view.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/univs_layout_list_head_view.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\pull_to_refresh_header_horizontal.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
@@ -236,24 +236,24 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.flyco.tablayout\\FlycoTabLayout_Lib\\1.5.0\\res\\layout\\layout_tab.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_loginways.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\activity_loginways.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.flyco.tablayout\\FlycoTabLayout_Lib\\1.5.0\\res\\layout\\layout_tab.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_userandsecurity.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\dialog_userandsecurity.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\subscribe_activity.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\subscribe_activity.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_at_item.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_at_item.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\subscribe_activity.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\subscribe_activity.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -264,12 +264,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_full_alert_dialog.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_strart.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_strart.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_at_overlay.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_at_overlay.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_strart.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_strart.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_at_overlay.xml",
@@ -300,12 +300,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_userandsecurity.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\univs_itme_channel_view.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\univs_itme_channel_view.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_spec_layout_content_list.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\activity_spec_layout_content_list.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\univs_itme_channel_view.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\univs_itme_channel_view.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
@@ -328,12 +328,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu_item.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_person.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_person.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_person.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_person.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
@@ -352,12 +352,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_start.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_setnewpassword.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_setnewpassword.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_setnewpassword.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_setnewpassword.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
@@ -368,12 +368,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/umeng_socialize_base_alert_dialog.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\univs_itme_article_view2.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\univs_itme_article_view2.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\univs_itme_article_view2.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\univs_itme_article_view2.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_news.xml",
@@ -456,12 +456,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/dialog_findpassword.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/dialog_findpassword.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_photos.xml",
@@ -496,12 +496,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_layout_content_list.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\fragment_layout_content_list.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/umeng_socialize_base_alert_dialog_button.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/umeng_socialize_base_alert_dialog_button.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_layout_content_list.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\fragment_layout_content_list.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -532,24 +532,24 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_full_alert_dialog_item.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\bys\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_loginbyemail.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\activity_loginbyemail.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_registerbyphone.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\src\\main\\res\\layout\\activity_registerbyphone.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_loginbyemail.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\activity_loginbyemail.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/debug/layout/umeng_bak_at_list_item.xml",
@@ -584,12 +584,12 @@
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_base_alert_dialog_button.xml",
         "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\res\\layout\\umeng_socialize_base_alert_dialog_button.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/E:\\Users\\xuzhili\\workspace\\workspace\\Univs1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",

@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.SimpleOnPageChangeListener;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -109,7 +110,7 @@ public class ArticlePageFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 ArticleItme item = articleAdapter.getItem(position - 2);
-                MyHttpAPIControl.newInstance().getTongji(item.getContentid(),
+                MyHttpAPIControl.newInstance().getTongji(item.getContentid()+"",
                         new AsyncHttpResponseHandler() {
                             //要调用统计接口进行统计
                         });
@@ -199,6 +200,7 @@ public class ArticlePageFragment extends Fragment {
                         if (dialog != null) {
                             dialog.dismiss();
                         }
+                        Log.d("ArticlePageFragment", "content:" + content);
                         mPullListView.onRefreshComplete();
                         Type tp = new TypeToken<UnivsDataBase<ArticleItme>>() {
                         }.getType();

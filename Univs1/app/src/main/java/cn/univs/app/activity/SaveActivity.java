@@ -75,7 +75,7 @@ public class SaveActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 ArticleItme item = articleAdapter.getItem(position - 1);
-                MyHttpAPIControl.newInstance().getTongji(item.getContentid(),
+                MyHttpAPIControl.newInstance().getTongji(item.getContentid()+"",
                         new AsyncHttpResponseHandler() {
                             //要调用统计接口进行统计
                         });

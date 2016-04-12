@@ -20,9 +20,11 @@ public class ArticleItme implements Serializable {
 	 * "1067081765e5ff0c57286d596c5f4f205a925b66966268504e616821533aff0c4e2d53481270b96574ff0c968f77404e0096358282594f5f3a70c8768497f34e5058f054cd8d77ff0c4e007fa451456ee1751f673a6d3b529b768459275b66751f51fa73b057285b666821751f6d3b533a95e853e373a98d774e8665f65c1a5feb95eaff0c8fd94e9b5b66751f7a7f7684201c65f65c1a201d670d88c5662f4ed64eec5728519b8bad65f6768465e7519b8bad670d88c575318be568218bbe8ba1827a672f"
 	 * , "comments": 0, "sorttime": 1414135295
 	 */
-	@DatabaseField
-	private String contentid;
 	@DatabaseField(id = true, columnName = "mid", unique = true)
+	private int contentid;
+//	@DatabaseField(id = true, columnName = "mid", unique = true)
+//    public long id_;
+	@DatabaseField
 	private int modelid;
 	@DatabaseField
 	private String title;
@@ -38,11 +40,11 @@ public class ArticleItme implements Serializable {
 	private long sorttime;
 	private ArrayList<SpecialItme> data;
 
-	public String getContentid() {
+	public int getContentid() {
 		return contentid;
 	}
 
-	public void setContentid(String contentid) {
+	public void setContentid(int contentid) {
 		this.contentid = contentid;
 	}
 
@@ -114,7 +116,7 @@ public class ArticleItme implements Serializable {
 		super();
 	}
 
-	public ArticleItme(String contentid, int modelid, String title,
+	public ArticleItme(int contentid, int modelid, String title,
 			String thumb, String image, String description, int comments, long sorttime,
 			ArrayList<SpecialItme> data) {
 		super();
