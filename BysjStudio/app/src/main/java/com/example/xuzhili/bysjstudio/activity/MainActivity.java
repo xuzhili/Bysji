@@ -32,6 +32,7 @@ import com.example.xuzhili.bysjstudio.ParseUtils;
 import com.example.xuzhili.bysjstudio.R;
 import com.example.xuzhili.bysjstudio.adapter.NewsFragmentPagerAdapter;
 import com.example.xuzhili.bysjstudio.bean.Category;
+import com.example.xuzhili.bysjstudio.bean.Me;
 import com.example.xuzhili.bysjstudio.bean.UnivsDataBase;
 import com.example.xuzhili.bysjstudio.fragment.ArticlePageFragment;
 import com.example.xuzhili.bysjstudio.util.ScreenSizeUtil;
@@ -48,6 +49,7 @@ import java.util.HashMap;
 
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.PlatformActionListener;
+import cn.sharesdk.framework.PlatformDb;
 import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.sina.weibo.SinaWeibo;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -150,7 +152,7 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
         rlLoginWeibo.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                    loginSharedSdk(SinaWeibo.NAME);
+                loginSharedSdk(SinaWeibo.NAME);
             }
         });
 
@@ -540,26 +542,53 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
 
     @Override
     public void onComplete(Platform platform, int i, HashMap<String, Object> hashMap) {
-        final String access_token = platform.getDb().getToken();
-        String site_user_id = platform.getDb().getUserId();
+        PlatformDb platformDb = platform.getDb();
+        final String access_token = platformDb.getToken();
+        String site_user_id = platformDb.getUserId();
 //        Log.i(TAG,site_user_id + ":site_user_id");
 //        Log.i(TAG,access_token + ":access_token");
-        String site_user_name = platform.getDb().getUserName();
-        String site_user_avatar_usrl = platform.getDb().getUserIcon();
+        final String site_user_name = platformDb.getUserName();
+        String site_user_avatar_usrl = platformDb.getUserIcon();
         String site_user_bio = "";
-        String wechat_union_id = platform.getDb().get("unionid");
-        String refresh_token = platform.getDb().get("refresh_token");
+        String wechat_union_id = platformDb.get("unionid");
+        String refresh_token = platformDb.get("refresh_token");
 
-        Log.d("MainActivity", "platform:" + platform.getDb().exportData());
+        Me me = new Me(site_user_name
+                , site_user_avatar_usrl
+                , access_token
+                , platformDb.get("resume")
+                , platformDb.get("secret")
+                , site_user_id);
+        UserUtils.resetMyInfo(MainActivity.this, me);
+        loadUserINfo();
+//        handler.post(new Runnable() {
+//            @Override
+//            public void run() {
+//                Toast.makeText(MainActivity.this, site_user_name + ":name", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+        Log.d("MainActivity", "site_user_name:" + site_user_name);
+        Log.d("MainActivity", "platform:" + platformDb.exportData());
     }
 
     @Override
-    public void onError(Platform platform, int i, Throwable throwable) {
-
+    public void onError(Platform platform, int i, final Throwable throwable) {
+        Log.d("MainActivity", "throwable: " + throwable.toString());
+//        handler.post(new Runnable() {
+//            @Override
+//            public void run() {
+//                Toast.makeText(MainActivity.this, throwable.toString() + ":error", Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 
     @Override
     public void onCancel(Platform platform, int i) {
-
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, ":cancel", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

@@ -26,6 +26,7 @@ import com.example.xuzhili.bysjstudio.ParseUtils;
 import com.example.xuzhili.bysjstudio.R;
 import com.example.xuzhili.bysjstudio.bean.ArticleItme;
 import com.example.xuzhili.bysjstudio.bean.NewsItem;
+import com.example.xuzhili.bysjstudio.bean.ShareContent;
 import com.example.xuzhili.bysjstudio.dao.ArticleItemDao;
 import com.example.xuzhili.bysjstudio.dao.DatabaseHelper;
 import com.example.xuzhili.bysjstudio.util.DateUtils;
@@ -33,6 +34,7 @@ import com.example.xuzhili.bysjstudio.util.DialogUtils;
 import com.example.xuzhili.bysjstudio.util.SharedPMananger;
 import com.example.xuzhili.bysjstudio.util.UserUtils;
 import com.example.xuzhili.bysjstudio.widget.OnChangedListener;
+import com.example.xuzhili.bysjstudio.widget.SharePopupWindow;
 import com.example.xuzhili.bysjstudio.widget.SlipButton;
 import com.google.gson.reflect.TypeToken;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -221,7 +223,7 @@ public class NewsActivity extends FragmentActivity implements OnChangedListener 
     }
 
     private void getdata() {
-        MyHttpAPIControl.newInstance().getArticle(item.getContentid()+"",
+        MyHttpAPIControl.newInstance().getArticle(item.getContentid() + "",
                 new AsyncHttpResponseHandler() {
 
                     @Override
@@ -313,6 +315,11 @@ public class NewsActivity extends FragmentActivity implements OnChangedListener 
                     currentTextView.setTextColor(Color.WHITE);
                     break;
                 case R.id.ll_share:// 分享
+                    if (ss == null) return;
+                    ShareContent shareContent = new ShareContent(item.getTitle(), item.getDescription(), item.getImage(), ss.getData().getShareurl());
+                    SharePopupWindow sharePopupWindow = new SharePopupWindow(NewsActivity.this, shareContent);
+                    sharePopupWindow.setIsHasBackGround(true);
+                    sharePopupWindow.showPopupWindow(ll_share);
 //                    setShareContent();
 //                    // 是否只有已登录用户才能打开分享选择页
 //                    mController.openShare(NewsActivity.this, false);
