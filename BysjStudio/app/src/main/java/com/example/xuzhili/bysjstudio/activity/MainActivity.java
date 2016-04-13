@@ -560,7 +560,12 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
                 , platformDb.get("secret")
                 , site_user_id);
         UserUtils.resetMyInfo(MainActivity.this, me);
-        loadUserINfo();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loadUserINfo();
+            }
+        },20);
 //        handler.post(new Runnable() {
 //            @Override
 //            public void run() {
