@@ -1,0 +1,190 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lucency_gray" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/ll_sliding"
+                    android:background="@android:color/holo_blue_light"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.flyco.tablayout.SlidingTabLayout
+                        android:id="@+id/slidingLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:tl_indicator_color="@color/lucency_gray"
+                        app:tl_indicator_style="BLOCK"
+                        app:tl_textSelectColor="@android:color/white"
+                        app:tl_textUnselectColor="@android:color/white" />
+
+                    <ImageView
+                        android:id="@+id/add_naviga_itme_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:scaleType="center"
+                        android:src="@drawable/selector_add_btn" />
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/failure_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/reload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/icon_app"
+                    android:text="数据加载失败 ，点击刷新" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="250dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/light"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cir_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/avatar"
+                app:civ_border_color="@android:color/holo_blue_light"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/cir_avatar"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="未登录"
+                android:textColor="@color/ff_666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="个人信息"
+                android:textColor="@color/ff_666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/rl_save"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="个人收藏"
+                android:textColor="@color/ff_666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="手机号码登录"
+                android:textColor="@color/ff_666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="新浪微博登录"
+                android:textColor="@color/ff_666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

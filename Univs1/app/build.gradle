@@ -16,6 +16,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    productFlavors {
+        univs {
+            manifestPlaceholders = [TD_CHANNEL_VALUE: "univs"]
+        }
+    }
 }
 
 dependencies {

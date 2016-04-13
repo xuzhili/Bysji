@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 24.4.1">
+
+    <issue
+        id="ResAuto"
+        severity="Fatal"
+        message="In Gradle projects, always use `http://schemas.android.com/apk/res-auto` for custom attributes"
+        category="Correctness"
+        priority="9"
+        summary="Hardcoded Package in Namespace"
+        explanation="In Gradle projects, the actual package used in the final APK can vary; for example,you can add a `.debug` package suffix in one version and not the other. Therefore, you should *not* hardcode the application package in the resource; instead, use the special namespace `http://schemas.android.com/apk/res-auto` which will cause the tools to figure out the right namespace for the resource regardless of the actual package used during the build."
+        errorLine1="    xmlns:prt=&quot;http://schemas.android.com/apk/res/cn.univs.app&quot;"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/fragment_layout_content_list.xml"
+            line="3"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/seperate_line`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/seperate_line&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/subscribe_activity.xml"
+            line="81"
+            column="17"/>
+        <location
+            file="/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/layout/subscribe_activity.xml"
+            line="60"
+            column="17"/>
+    </issue>
+
+</issues>

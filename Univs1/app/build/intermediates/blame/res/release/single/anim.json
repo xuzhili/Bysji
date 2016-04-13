@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/umeng_socialize_fade_in.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/umeng_socialize_fade_in.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/design_snackbar_in.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/umeng_socialize_slide_in_from_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/umeng_socialize_slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/umeng_socialize_shareboard_animation_out.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/umeng_socialize_shareboard_animation_out.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/design_fab_in.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/ptr_slide_in_from_top.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/ptr_slide_in_from_top.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/ptr_slide_in_from_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/ptr_slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/ptr_slide_out_to_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/ptr_slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/umeng_socialize_slide_out_from_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/umeng_socialize_slide_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/umeng_socialize_shareboard_animation_in.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/umeng_socialize_shareboard_animation_in.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/ptr_slide_out_to_top.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/ptr_slide_out_to_top.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/umeng_socialize_fade_out.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/umeng_socialize_fade_out.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/design_fab_out.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/kk_menu_out.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/kk_menu_out.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/kk_menu_in.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/anim/kk_menu_in.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/release/anim/design_snackbar_out.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/anim/design_snackbar_out.xml"
+    }
+]

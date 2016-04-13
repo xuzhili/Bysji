@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/live/debug/menu/navigation_menu.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/menu/navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/live/debug/menu/main.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/build/intermediates/res/merged/live/debug/menu/strart.xml",
+        "source": "/Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/res/menu/strart.xml"
+    }
+]
