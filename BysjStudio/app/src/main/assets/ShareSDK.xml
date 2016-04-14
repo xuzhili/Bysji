@@ -51,31 +51,31 @@
 			Line           http://media.line.me/zh-hant/
 			Pocket         http://getpocket.com/developer/apps/new
     -->
-    <ShareSDK
-        AppKey = "c3c2d1601166"/> <!-- 修改成你在sharesdk后台注册的应用的appkey"-->
-
-    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
-    <SinaWeibo
-        Id="1"
-        SortId="1"
-        AppKey="2502423577"
-        AppSecret="b3e56add5c7990382a0973efc77dc2b7"
-        RedirectUrl="http://zhibodang.com/auth/weibo/callback"
-        ShareByAppClient="true"
-        Enable="true" />
-
     <!--<ShareSDK-->
-        <!--AppKey = "11949b97947d6"/> &lt;!&ndash; 修改成你在sharesdk后台注册的应用的appkey"&ndash;&gt;-->
+        <!--AppKey = "c3c2d1601166"/> &lt;!&ndash; 修改成你在sharesdk后台注册的应用的appkey"&ndash;&gt;-->
 
     <!--&lt;!&ndash; ShareByAppClient标识是否使用微博客户端分享，默认是false &ndash;&gt;-->
     <!--<SinaWeibo-->
         <!--Id="1"-->
         <!--SortId="1"-->
-        <!--AppKey="3589096103"-->
-        <!--AppSecret="324d55d72d07605e58389edf127673f6"-->
-        <!--RedirectUrl="http://dashboard.mob.com/#/share/index"-->
+        <!--AppKey="2502423577"-->
+        <!--AppSecret="b3e56add5c7990382a0973efc77dc2b7"-->
+        <!--RedirectUrl="http://zhibodang.com/auth/weibo/callback"-->
         <!--ShareByAppClient="true"-->
         <!--Enable="true" />-->
+
+    <ShareSDK
+        AppKey = "11949b97947d6"/> <!-- 修改成你在sharesdk后台注册的应用的appkey"-->
+
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+    <SinaWeibo
+        Id="1"
+        SortId="1"
+        AppKey="3589096103"
+        AppSecret="324d55d72d07605e58389edf127673f6"
+        RedirectUrl="http://dashboard.mob.com/#/share/index"
+        ShareByAppClient="true"
+        Enable="true" />
 
     <TencentWeibo
         Id="2"
@@ -109,16 +109,16 @@
     <Wechat
         Id="4"
         SortId="4"
-        AppId="wx469d2492243a8d3f"
-        AppSecret="3fdc50d9c6cadea98a7cced1205a1a1b"
+        AppId="wx9f3a0943e75b3720"
+        AppSecret="a8f05e492a572d6b4a5b8c93cacd0957"
         BypassApproval="false"
         Enable="true" />
 
     <WechatMoments
         Id="5"
         SortId="5"
-        AppId="wx469d2492243a8d3f"
-        AppSecret="3fdc50d9c6cadea98a7cced1205a1a1b"
+        AppId="wx9f3a0943e75b3720"
+        AppSecret="a8f05e492a572d6b4a5b8c93cacd0957"
         BypassApproval="false"
         Enable="true" />
 

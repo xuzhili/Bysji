@@ -147,7 +147,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rl_login_phone"
+            android:id="@+id/rl_login_wechat"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -159,7 +159,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="手机号码登录"
+                android:text="微信登录"
                 android:textColor="@color/ff_666"
                 android:textSize="14sp" />
         </RelativeLayout>

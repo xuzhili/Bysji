@@ -34,7 +34,7 @@ public class DownloadWebImgTask extends AsyncTask<String, Integer, Boolean> {
 		HttpURLConnection urlCon = null;
 		try {
 			path = Environment.getExternalStorageDirectory().getPath()
-					+ "/中大在线/image/";
+					+ "/新闻在线/image/";
 			Environment.getExternalStoragePublicDirectory(path);
 			final File fileDirectory = new File(path);
 			if (!fileDirectory.exists()) {

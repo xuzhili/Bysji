@@ -53,6 +53,7 @@ import cn.sharesdk.framework.PlatformActionListener;
 import cn.sharesdk.framework.PlatformDb;
 import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.sina.weibo.SinaWeibo;
+import cn.sharesdk.wechat.friends.Wechat;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
@@ -68,7 +69,7 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
     private View mFailure_view;
     private SlidingTabLayout slidingTabLayout;
     private DrawerLayout drawerLayout;
-    private RelativeLayout rlMyInfo, rlSave, rlLoginPhone, rlLoginWeibo;
+    private RelativeLayout rlMyInfo, rlSave, rlLoginWechat, rlLoginWeibo;
     private TextView tvUsername;
     private CircleImageView cirAvatar;
     private LinearLayout llLeft, llSliding;
@@ -154,6 +155,13 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
             @Override
             public void onClick(View v) {
                 loginSharedSdk(SinaWeibo.NAME);
+            }
+        });
+
+        rlLoginWechat.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loginSharedSdk(Wechat.NAME);
             }
         });
 
@@ -317,7 +325,7 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
             supportActionBar.setDisplayHomeAsUpEnabled(true);
 
         rlMyInfo = (RelativeLayout) findViewById(R.id.rl_myinfo);
-        rlLoginPhone = (RelativeLayout) findViewById(R.id.rl_login_phone);
+        rlLoginWechat = (RelativeLayout) findViewById(R.id.rl_login_wechat);
         rlLoginWeibo = (RelativeLayout) findViewById(R.id.rl_login_weibo);
         rlSave = (RelativeLayout) findViewById(R.id.rl_save);
         llLeft = (LinearLayout) findViewById(R.id.left);
@@ -531,12 +539,12 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
 
         if (UserUtils.getSessionKey() != null) {
             rlLoginWeibo.setVisibility(View.GONE);
-            rlLoginPhone.setVisibility(View.GONE);
+            rlLoginWechat.setVisibility(View.GONE);
             ImageLoader.getInstance().displayImage(UserUtils.getMyAvatar(), cirAvatar);
             tvUsername.setText(UserUtils.getMyUsername());
         } else {
             rlLoginWeibo.setVisibility(View.VISIBLE);
-            rlLoginPhone.setVisibility(View.VISIBLE);
+            rlLoginWechat.setVisibility(View.VISIBLE);
             cirAvatar.setImageResource(R.drawable.avatar);
             tvUsername.setText("未登录");
         }
@@ -569,12 +577,12 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
                 loadUserINfo();
             }
         }, 20);
-//        handler.post(new Runnable() {
-//            @Override
-//            public void run() {
-//                Toast.makeText(MainActivity.this, site_user_name + ":name", Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
+            }
+        });
         Log.d("MainActivity", "site_user_name:" + site_user_name);
         Log.d("MainActivity", "platform:" + platformDb.exportData());
     }
@@ -582,12 +590,12 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
     @Override
     public void onError(Platform platform, int i, final Throwable throwable) {
         Log.d("MainActivity", "throwable: " + throwable.toString());
-//        handler.post(new Runnable() {
-//            @Override
-//            public void run() {
-//                Toast.makeText(MainActivity.this, throwable.toString() + ":error", Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, ":error", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
