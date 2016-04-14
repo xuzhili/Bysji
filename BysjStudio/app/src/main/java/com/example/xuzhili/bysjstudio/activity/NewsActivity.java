@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -165,7 +166,7 @@ public class NewsActivity extends AppCompatActivity implements OnChangedListener
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.nav_font:
                 showDialog();
                 break;
@@ -349,7 +350,13 @@ public class NewsActivity extends AppCompatActivity implements OnChangedListener
                     break;
                 case R.id.ll_share:// 分享
                     if (ss == null) return;
-                    ShareContent shareContent = new ShareContent(item.getTitle(), item.getDescription(), item.getImage(), ss.getData().getShareurl());
+                    Log.d("TextViewOnclick", item.getTitle() + "===");
+                    Log.d("TextViewOnclick", item.getDescription() + "===");
+                    Log.d("TextViewOnclick", item.getImage() + "===");
+                    Log.d("TextViewOnclick", item.getThumb() + "===");
+                    Log.d("TextViewOnclick", ss.getData().getPublished() + "===");
+                    Log.d("TextViewOnclick", ss.getData().getShareurl() + "===");
+                    ShareContent shareContent = new ShareContent(item.getTitle(), item.getDescription(), item.getThumb(), ss.getData().getShareurl());
                     SharePopupWindow sharePopupWindow = new SharePopupWindow(NewsActivity.this, shareContent);
                     sharePopupWindow.setIsHasBackGround(true);
                     sharePopupWindow.showPopupWindow(ll_share);

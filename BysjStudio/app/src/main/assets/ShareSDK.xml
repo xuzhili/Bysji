@@ -111,7 +111,7 @@
         SortId="4"
         AppId="wx9f3a0943e75b3720"
         AppSecret="a8f05e492a572d6b4a5b8c93cacd0957"
-        BypassApproval="false"
+        BypassApproval="true"
         Enable="true" />
 
     <WechatMoments
@@ -119,7 +119,7 @@
         SortId="5"
         AppId="wx9f3a0943e75b3720"
         AppSecret="a8f05e492a572d6b4a5b8c93cacd0957"
-        BypassApproval="false"
+        BypassApproval="true"
         Enable="true" />
 
 	<WechatFavorite
