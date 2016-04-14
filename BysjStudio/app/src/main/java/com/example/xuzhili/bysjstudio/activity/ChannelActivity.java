@@ -1,9 +1,11 @@
 package com.example.xuzhili.bysjstudio.activity;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -26,6 +28,7 @@ import com.example.xuzhili.bysjstudio.adapter.OtherAdapter;
 import com.example.xuzhili.bysjstudio.bean.Category;
 import com.example.xuzhili.bysjstudio.bean.UnivsDataBase;
 import com.example.xuzhili.bysjstudio.util.ApplicationUtil;
+import com.example.xuzhili.bysjstudio.util.ScreenUtils;
 import com.example.xuzhili.bysjstudio.util.SharedPMananger;
 import com.example.xuzhili.bysjstudio.widget.DragGrid;
 import com.example.xuzhili.bysjstudio.widget.OtherGridView;
@@ -40,7 +43,7 @@ import java.util.ArrayList;
  * @Author RA
  * @Blog http://blog.csdn.net/vipzjyno1
  */
-public class ChannelActivity extends Activity implements OnItemClickListener,
+public class ChannelActivity extends AppCompatActivity implements OnItemClickListener,
         OnClickListener {
     /**
      * 用户栏目的GRIDVIEW
@@ -71,6 +74,7 @@ public class ChannelActivity extends Activity implements OnItemClickListener,
      */
     boolean isMove = false;
     private UnivsDataBase<Category> mUnivsDataBase;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,18 +144,30 @@ public class ChannelActivity extends Activity implements OnItemClickListener,
 
     }
 
-    /**
-     * 初始化布局
-     */
     private void initView() {
-        TextView title = (TextView) findViewById(R.id.tv_head_title);
-        title.setText(getString(R.string.app_name));
-        ImageView back = (ImageView) findViewById(R.id.iv_head_left);
-        findViewById(R.id.iv_head_right).setVisibility(View.GONE);
+
+        toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle(getString(R.string.app_name));
+        toolbar.setTitleTextColor(getResources().getColor(R.color.ff_666));
+        toolbar.setBackgroundColor(getResources().getColor(R.color.action_bar));
+        ScreenUtils.compat(this, ScreenUtils.colorBurn(getResources().getColor(R.color.action_bar)));
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         userGridView = (DragGrid) findViewById(R.id.userGridView);
         otherGridView = (OtherGridView) findViewById(R.id.otherGridView);
-        back.setOnClickListener(this);
     }
+
 
     /**
      * GRIDVIEW对应的ITEM点击监听接口

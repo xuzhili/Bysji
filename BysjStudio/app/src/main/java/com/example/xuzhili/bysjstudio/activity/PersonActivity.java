@@ -1,9 +1,11 @@
 package com.example.xuzhili.bysjstudio.activity;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -11,10 +13,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.xuzhili.bysjstudio.R;
+import com.example.xuzhili.bysjstudio.util.ScreenUtils;
 import com.example.xuzhili.bysjstudio.util.UserUtils;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
-public class PersonActivity extends Activity {
+public class PersonActivity extends AppCompatActivity {
 
     private static final String TAG = "PersonActivity";
     private String bio = "";
@@ -31,6 +34,7 @@ public class PersonActivity extends Activity {
     String avatar;
     private boolean isDestroyed;
     private RelativeLayout rlLoginout;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,14 +46,6 @@ public class PersonActivity extends Activity {
     }
 
     private void eventlistner() {
-
-
-        findViewById(R.id.ll_person_list_back).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
         rlLoginout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +79,26 @@ public class PersonActivity extends Activity {
     }
 
     private void initView() {
+
+
+        toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("个人信息");
+        toolbar.setTitleTextColor(getResources().getColor(R.color.ff_666));
+        toolbar.setBackgroundColor(getResources().getColor(R.color.action_bar));
+        ScreenUtils.compat(this, ScreenUtils.colorBurn(getResources().getColor(R.color.action_bar)));
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
         tvUsername = ((TextView) findViewById(R.id.tv_person_username));

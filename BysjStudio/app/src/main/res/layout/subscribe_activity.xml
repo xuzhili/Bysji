@@ -5,15 +5,19 @@
     android:layout_height="fill_parent"
     android:background="@android:color/white" >
 
-    <include
-        android:id="@+id/title_bar"
-        layout="@layout/univs_layout_head_view" />
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/tool_bar"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+    <!--<include-->
+        <!--android:id="@+id/title_bar"-->
+        <!--layout="@layout/univs_layout_head_view" />-->
 
     <View
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@id/title_bar"
+        android:layout_below="@id/tool_bar"
         android:background="@drawable/news_list_line" />
 
     <ScrollView
@@ -63,7 +67,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/news_list_line" />
 
-            <cn.univs.app.widget.DragGrid
+            <com.example.xuzhili.bysjstudio.widget.DragGrid
                 android:id="@+id/userGridView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -112,7 +116,7 @@
                     android:background="@drawable/news_list_line" />
             </LinearLayout>
 
-            <cn.univs.app.widget.OtherGridView
+            <com.example.xuzhili.bysjstudio.widget.OtherGridView
                 android:id="@+id/otherGridView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

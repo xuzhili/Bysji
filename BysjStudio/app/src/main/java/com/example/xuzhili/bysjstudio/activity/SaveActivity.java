@@ -1,8 +1,9 @@
 package com.example.xuzhili.bysjstudio.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,6 +15,7 @@ import com.example.xuzhili.bysjstudio.adapter.ArticleAdapter;
 import com.example.xuzhili.bysjstudio.bean.ArticleItme;
 import com.example.xuzhili.bysjstudio.dao.ArticleItemDao;
 import com.example.xuzhili.bysjstudio.dao.DatabaseHelper;
+import com.example.xuzhili.bysjstudio.util.ScreenUtils;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import java.util.ArrayList;
@@ -21,11 +23,11 @@ import java.util.List;
 
 import library.PullToRefreshListView;
 
-public class SaveActivity extends Activity {
+public class SaveActivity extends AppCompatActivity {
 
     private PullToRefreshListView mPullListView;
     private ArticleAdapter articleAdapter;
-    private Toolbar toolBar;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,9 +61,6 @@ public class SaveActivity extends Activity {
     }
 
     private void initData() {
-
-        toolBar.setTitle("个人收藏");
-        toolBar.setTitleTextColor(getResources().getColor(R.color.ff_666));
 
         articleAdapter = new ArticleAdapter(this);
         mPullListView.setAdapter(articleAdapter);
@@ -105,6 +104,24 @@ public class SaveActivity extends Activity {
     private void initView() {
 
         mPullListView = (PullToRefreshListView) findViewById(R.id.mylistView);
-        toolBar = (Toolbar) findViewById(R.id.tool_bar);
+
+        toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("个人收藏");
+        toolbar.setTitleTextColor(getResources().getColor(R.color.ff_666));
+        toolbar.setBackgroundColor(getResources().getColor(R.color.action_bar));
+        ScreenUtils.compat(this, ScreenUtils.colorBurn(getResources().getColor(R.color.action_bar)));
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

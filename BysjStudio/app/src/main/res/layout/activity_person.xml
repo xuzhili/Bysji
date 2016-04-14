@@ -1,49 +1,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/light"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
         android:layout_width="match_parent"
-        android:id="@+id/rl_action_bar"
-        android:layout_height="@dimen/action_bar_height"
-        android:background="@color/white"
-        android:clickable="true">
-
-        <LinearLayout
-            android:id="@+id/ll_person_list_back"
-            android:layout_width="@dimen/action_bar_height"
-            android:layout_height="@dimen/action_bar_height"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-            <ImageView
-                android:id="@+id/iv_person_back"
-                android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/back"/>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="个人信息"
-            android:textColor="@android:color/holo_blue_light"
-            android:textSize="@dimen/title_text_size"/>
-
-    </RelativeLayout>
-
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:id="@+id/ll_person_top"
         android:layout_width="match_parent"
-        android:layout_below="@id/rl_action_bar"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
         android:layout_marginTop="@dimen/dimen_margin_20"
         android:orientation="vertical">
 
@@ -53,42 +23,39 @@
             android:layout_height="96dp"
             android:background="@drawable/btn_list_item_bg"
             android:clickable="true"
-            android:weightSum="1"
-            >
+            android:weightSum="1">
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/civ_person_avatar"
                 android:layout_width="@dimen/img_big_size"
                 android:layout_height="@dimen/img_big_size"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/dimen_margin_12"
-                android:layout_marginStart="@dimen/dimen_margin_12"
-                />
+                android:layout_marginStart="@dimen/dimen_margin_12" />
 
 
             <ImageView
                 android:id="@+id/iv_person_following_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
-                android:src="@drawable/icon_right_arrow"
-                />
+                android:layout_marginRight="@dimen/dimen_margin_12"
+                android:src="@drawable/icon_right_arrow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
+                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_toLeftOf="@id/iv_person_following_arrow"
                 android:layout_toStartOf="@id/iv_person_following_arrow"
                 android:text="头像"
                 android:textColor="@color/lucency_gray"
-                android:textSize="@dimen/textview_item"
-                />
+                android:textSize="@dimen/textview_item" />
 
         </RelativeLayout>
 
@@ -99,49 +66,46 @@
             android:layout_marginTop="@dimen/dimen_margin_12"
             android:background="@drawable/btn_list_item_bg"
             android:clickable="true"
-            android:weightSum="1"
-            >
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/iv_person_username_following_arrow"
                 android:layout_width="@dimen/arrow_width"
                 android:layout_height="@dimen/arrow_height"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
-                android:src="@drawable/icon_right_arrow"
-                />
+                android:layout_marginRight="@dimen/dimen_margin_12"
+                android:src="@drawable/icon_right_arrow" />
 
             <TextView
                 android:id="@+id/tv_person_following_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
+                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_toLeftOf="@id/iv_person_username_following_arrow"
                 android:layout_toStartOf="@id/iv_person_username_following_arrow"
                 android:text="昵称"
                 android:textColor="@color/lucency_gray"
-                android:textSize="@dimen/textview_item"
-                />
+                android:textSize="@dimen/textview_item" />
+
             <TextView
                 android:id="@+id/tv_person_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:singleLine="true"
                 android:layout_alignParentLeft="true"
-                android:layout_toLeftOf="@id/tv_person_following_number"
-                android:layout_marginRight="@dimen/dimen_margin_12"
-                android:ellipsize="middle"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/dimen_margin_12"
+                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginStart="@dimen/dimen_margin_12"
+                android:layout_toLeftOf="@id/tv_person_following_number"
+                android:ellipsize="middle"
+                android:singleLine="true"
                 android:textColor="@color/gray"
-                android:textSize="@dimen/textview_item"
-                />
+                android:textSize="@dimen/textview_item" />
 
             <View
                 android:layout_width="match_parent"
@@ -149,7 +113,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="@dimen/dimen_margin_12"
                 android:layout_marginStart="@dimen/dimen_margin_12"
-                android:background="@color/lightgray"/>
+                android:background="@color/lightgray" />
         </RelativeLayout>
 
 
@@ -159,58 +123,56 @@
             android:layout_height="@dimen/rl_item_height"
             android:background="@drawable/btn_list_item_bg"
             android:clickable="true"
-            android:weightSum="1"
-            >
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/iv_person_follower_arrow"
                 android:layout_width="@dimen/arrow_width"
                 android:layout_height="@dimen/arrow_height"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
-                android:src="@drawable/icon_right_arrow"
-                />
+                android:layout_marginRight="@dimen/dimen_margin_12"
+                android:src="@drawable/icon_right_arrow" />
 
             <TextView
                 android:id="@+id/tv_person_follower_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
+                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_toLeftOf="@id/iv_person_follower_arrow"
                 android:layout_toStartOf="@id/iv_person_follower_arrow"
                 android:text="简介"
                 android:textColor="@color/lucency_gray"
-                android:textSize="@dimen/textview_item"
-                />
+                android:textSize="@dimen/textview_item" />
+
             <TextView
                 android:id="@+id/tv_person_bio"
                 android:layout_width="wrap_content"
-                android:layout_alignParentLeft="true"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
-                android:singleLine="true"
                 android:layout_marginLeft="@dimen/dimen_margin_12"
+                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginStart="@dimen/dimen_margin_12"
-                android:ellipsize="middle"
                 android:layout_toLeftOf="@id/tv_person_follower_number"
                 android:layout_toStartOf="@id/tv_person_follower_number"
+                android:ellipsize="middle"
+                android:singleLine="true"
                 android:textColor="@color/gray"
-                android:textSize="@dimen/textview_item"
-                />
+                android:textSize="@dimen/textview_item" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.1dp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="@dimen/dimen_margin_12"
                 android:layout_marginStart="@dimen/dimen_margin_12"
-                android:background="@color/lightgray"/>
+                android:background="@color/lightgray" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -219,57 +181,55 @@
             android:layout_height="@dimen/rl_item_height"
             android:background="@drawable/btn_list_item_bg"
             android:clickable="true"
-            android:weightSum="1"
-            >
+            android:weightSum="1">
 
             <ImageView
+                android:id="@+id/iv_person_tv_arrow"
                 android:layout_width="@dimen/arrow_width"
                 android:layout_height="@dimen/arrow_height"
-                android:layout_alignParentRight="true"
-                android:id="@+id/iv_person_tv_arrow"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
-                android:src="@drawable/icon_right_arrow"
-                />
+                android:layout_marginRight="@dimen/dimen_margin_12"
+                android:src="@drawable/icon_right_arrow" />
 
             <TextView
                 android:id="@+id/tv_person_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
+                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_toLeftOf="@id/iv_person_tv_arrow"
                 android:layout_toStartOf="@id/iv_person_tv_arrow"
                 android:textColor="@color/lucency_gray"
-                android:textSize="@dimen/textview_item"
-                />
+                android:textSize="@dimen/textview_item" />
+
             <TextView
                 android:id="@+id/tv_my_tv"
                 android:layout_width="wrap_content"
-                android:layout_alignParentLeft="true"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginEnd="@dimen/dimen_margin_12"
-                android:singleLine="true"
                 android:layout_marginLeft="@dimen/dimen_margin_12"
+                android:layout_marginRight="@dimen/dimen_margin_12"
                 android:layout_marginStart="@dimen/dimen_margin_12"
-                android:ellipsize="middle"
                 android:layout_toLeftOf="@id/tv_person_tv"
                 android:layout_toStartOf="@id/tv_person_tv"
+                android:ellipsize="middle"
+                android:singleLine="true"
                 android:textColor="@color/gray"
-                android:textSize="@dimen/textview_item"
-                />
+                android:textSize="@dimen/textview_item" />
         </RelativeLayout>
+
         <RelativeLayout
             android:id="@+id/rl_profile_logout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/rl_item_height"
-            android:layout_marginTop="@dimen/dimen_margin_20"
             android:layout_marginBottom="@dimen/dimen_margin_20"
+            android:layout_marginTop="@dimen/dimen_margin_20"
             android:background="@drawable/btn_list_item_bg"
             android:clickable="true"
             android:weightSum="1">
@@ -290,8 +250,8 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_below="@id/rl_action_bar"
         android:id="@+id/rl_crouton"
-        android:layout_height="60dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tool_bar" />
 </RelativeLayout>

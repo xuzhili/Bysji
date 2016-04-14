@@ -14,10 +14,6 @@
             android:background="?attr/colorPrimary"
             android:id="@+id/toolbar"
             android:layout_height="wrap_content"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/lucency_gray" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -33,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:id="@+id/ll_sliding"
-                    android:background="@android:color/holo_blue_light"
+                    android:background="@color/action_bar"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
@@ -101,7 +97,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/avatar"
-                app:civ_border_color="@android:color/holo_blue_light"
+                app:civ_border_color="@color/action_bar"
                 app:civ_border_width="2dp" />
 
             <TextView

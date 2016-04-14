@@ -36,6 +36,7 @@ import com.example.xuzhili.bysjstudio.bean.Me;
 import com.example.xuzhili.bysjstudio.bean.UnivsDataBase;
 import com.example.xuzhili.bysjstudio.fragment.ArticlePageFragment;
 import com.example.xuzhili.bysjstudio.util.ScreenSizeUtil;
+import com.example.xuzhili.bysjstudio.util.ScreenUtils;
 import com.example.xuzhili.bysjstudio.util.SharedPMananger;
 import com.example.xuzhili.bysjstudio.util.UserUtils;
 import com.flyco.tablayout.SlidingTabLayout;
@@ -306,6 +307,8 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
         tvUsername = (TextView) findViewById(R.id.tv_username);
         toolbar = ((Toolbar) findViewById(R.id.toolbar));
         toolbar.setTitle(getString(R.string.app_name));
+        toolbar.setBackgroundColor(getResources().getColor(R.color.action_bar));
+        ScreenUtils.compat(this,ScreenUtils.colorBurn( getResources().getColor(R.color.action_bar)));
         toolbar.setLogo(R.drawable.icon_copper);
         setSupportActionBar(toolbar);
 
@@ -565,7 +568,7 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
             public void run() {
                 loadUserINfo();
             }
-        },20);
+        }, 20);
 //        handler.post(new Runnable() {
 //            @Override
 //            public void run() {

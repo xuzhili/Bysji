@@ -7,14 +7,17 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,6 +34,7 @@ import com.example.xuzhili.bysjstudio.dao.ArticleItemDao;
 import com.example.xuzhili.bysjstudio.dao.DatabaseHelper;
 import com.example.xuzhili.bysjstudio.util.DateUtils;
 import com.example.xuzhili.bysjstudio.util.DialogUtils;
+import com.example.xuzhili.bysjstudio.util.ScreenUtils;
 import com.example.xuzhili.bysjstudio.util.SharedPMananger;
 import com.example.xuzhili.bysjstudio.util.UserUtils;
 import com.example.xuzhili.bysjstudio.widget.OnChangedListener;
@@ -49,12 +53,11 @@ import java.util.Date;
  *
  * @author issuser
  */
-public class NewsActivity extends FragmentActivity implements OnChangedListener {
+public class NewsActivity extends AppCompatActivity implements OnChangedListener {
     private NewsActivity mInstance;
     private ArticleItme item;
     private WebView web_customer;
-    private ImageView iv_head_left, iv_head_right;
-    private TextView tv_head_title, txt_title, txt_time;
+    private TextView txt_title, txt_time;
     protected View mView;
     private TextViewOnclick textOnclick;
     private WebSettings settings;
@@ -84,6 +87,7 @@ public class NewsActivity extends FragmentActivity implements OnChangedListener 
 //    String appID = "wx8b63be803dc131b2";
 //    String appSecret = "75f2be6949d858ef97688338d5cd4767";
     private Handler handler;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,23 +120,58 @@ public class NewsActivity extends FragmentActivity implements OnChangedListener 
     }
 
     private void initView() {
+
+
+        toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("新闻在线");
+        toolbar.setTitleTextColor(getResources().getColor(R.color.ff_666));
+        toolbar.setBackgroundColor(getResources().getColor(R.color.action_bar));
+        ScreenUtils.compat(this, ScreenUtils.colorBurn(getResources().getColor(R.color.action_bar)));
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
         dialog = new ProgressDialog(mInstance);
         dialog.show();
         Intent intent = getIntent();
         item = (ArticleItme) intent.getSerializableExtra("SpecialActivity");
-        tv_head_title = (TextView) findViewById(R.id.tv_head_title);
         txt_title = (TextView) findViewById(R.id.txt_title);
         txt_time = (TextView) findViewById(R.id.txt_time);
-        tv_head_title.setText(getString(R.string.app_name));
-        iv_head_left = (ImageView) findViewById(R.id.iv_head_left);
-        iv_head_right = (ImageView) findViewById(R.id.iv_head_right);
         ll_share = (RelativeLayout) findViewById(R.id.ll_share);
         ll_news = (LinearLayout) findViewById(R.id.ll_news);
         tvSave = (TextView) findViewById(R.id.tv_save);
-        iv_head_left.setOnClickListener(textOnclick);
-        iv_head_right.setOnClickListener(textOnclick);
+
         ll_share.setOnClickListener(textOnclick);
         initWeb();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.news_activity_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.nav_font:
+                showDialog();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @SuppressLint("JavascriptInterface")
@@ -275,12 +314,6 @@ public class NewsActivity extends FragmentActivity implements OnChangedListener 
         public void onClick(View v) {
 
             switch (v.getId()) {
-                case R.id.iv_head_left:
-                    finish();
-                    break;
-                case R.id.iv_head_right:
-                    showDialog();
-                    break;
                 case R.id.txt_small:// 字体 小
                     SharedPMananger.putString("fontsize", "small");
                     settings.setTextSize(WebSettings.TextSize.SMALLER);
