@@ -123,7 +123,7 @@ package com.example.xuzhili.bysjstudio;//package cn.univs.api;
 //			BufferedReader reader = new BufferedReader(new InputStreamReader(
 //					httpConn.getInputStream()));
 //			String line = null;
-//			while ((line = reader.readLine()) != null) {
+//			while ((line = wreader.readLine()) != null) {
 //				response.add(line);
 //			}
 //			reader.close();
