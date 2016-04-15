@@ -331,6 +331,7 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
         llLeft = (LinearLayout) findViewById(R.id.left);
         llSliding = (LinearLayout) findViewById(R.id.ll_sliding);
         drawerLayout = ((DrawerLayout) findViewById(R.id.drag_layout));
+        mViewpager = (ViewPager) findViewById(R.id.viewpager);
 
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.drawer_open, R.string.drawer_close);
@@ -439,7 +440,6 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
 
     private void setViewPagerV(ArrayList<Category> naviga) {
         if (naviga.size() == 0) return;
-        mViewpager = (ViewPager) findViewById(R.id.viewpager);
         viewpagerAdapter = new NewsFragmentPagerAdapter(
                 getSupportFragmentManager(), naviga);
         mViewpager.setAdapter(viewpagerAdapter);
@@ -544,7 +544,7 @@ public class MainActivity extends ActionBarActivity implements PlatformActionLis
             tvUsername.setText(UserUtils.getMyUsername());
         } else {
             rlLoginWeibo.setVisibility(View.VISIBLE);
-            rlLoginWechat.setVisibility(View.VISIBLE);
+            rlLoginWechat.setVisibility(View.GONE);
             cirAvatar.setImageResource(R.drawable.avatar);
             tvUsername.setText("未登录");
         }
