@@ -101,6 +101,8 @@ public class SharePopupWindow extends PopupWindow implements View.OnClickListene
         tvTitle = ((TextView) contentView.findViewById(R.id.tvTitle));
         rlWetChat = ((RelativeLayout) contentView.findViewById(R.id.rlWetchat));
         rlWetChatComment = ((RelativeLayout) contentView.findViewById(R.id.rlWetChatComment));
+        rlWetChat.setVisibility(View.GONE);
+        rlWetChatComment.setVisibility(View.GONE);
         rlSina = ((RelativeLayout) contentView.findViewById(R.id.rlSina));
         ll_ChaneseShare = ((LinearLayout) contentView.findViewById(R.id.ll_Chanese_share));
         shareView = ((LinearLayout) contentView.findViewById(R.id.ll_share_view));

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/xuzhili/workspace/bys/Bysji/Univs1/app/src/main/aidl/com/sina/sso/RemoteSSO.aidl
+ * Original file: E:\\workspace\\bysj\\Bysji\\Univs1\\app\\src\\main\\aidl\\com\\sina\\sso\\RemoteSSO.aidl
  */
 package com.sina.sso;
 public interface RemoteSSO extends android.os.IInterface

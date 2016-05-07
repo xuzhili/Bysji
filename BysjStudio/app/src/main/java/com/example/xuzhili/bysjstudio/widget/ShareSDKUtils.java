@@ -181,12 +181,12 @@ public class ShareSDKUtils {
         oks.disableSSOWhenAuthorize();
         if (title != null)
             oks.setTitle(title);
-        if (url != null)
-            oks.setUrl(url);
+//        if (url != null)
+//            oks.setUrl(url);
         if (text != null)
             oks.setText(text);
-        if (imageUrl != null)
-            oks.setImageUrl(imageUrl);//确保SDcard下面存在此张图片
+//        if (imageUrl != null)
+//            oks.setImageUrl(imageUrl);//确保SDcard下面存在此张图片
 
 // 启动分享GUI
         oks.show(context);
